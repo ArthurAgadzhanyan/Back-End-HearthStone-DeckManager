@@ -16,7 +16,7 @@ HTTP.createServer(function(request, response){
             body += chunk.toString('utf8');
         }).on('end', function () {
              var data = JSON.parse(body);
-             CLIENT.connect(function(err, CLIENT){
+             CLIENT.connect(function(err, CLIENT){ 
                  const db = CLIENT.db("node");
                  const collection = db.collection("user");
                  let user = {login: data.login, password: data.password};
