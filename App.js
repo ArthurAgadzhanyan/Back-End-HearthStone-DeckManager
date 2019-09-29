@@ -9,8 +9,8 @@ const SECRET_KEY = "QsafQAWRIOjh1";
 HTTP.createServer(function(request, response){
     const CLIENT = new MONGOCLIENT("mongodb://localhost:27017/", { useNewUrlParser: true });
 
-    if(request.method == 'OPTIONS'){response.end()}
-    if(request.url == "/register" && request.method == 'POST'){
+    if(request.method === 'OPTIONS'){response.end()}
+    if(request.url === "/register" && request.method === 'POST'){
         var body = '';
          request.on('data', function (chunk) {
             body += chunk.toString('utf8');
@@ -87,5 +87,7 @@ HTTP.createServer(function(request, response){
         })
     }
 
-}).listen(3001, "127.0.0.1");
+}).listen(3001, "127.0.0.1", () => {
+    console.log("Сервер запущен!")
+});
 

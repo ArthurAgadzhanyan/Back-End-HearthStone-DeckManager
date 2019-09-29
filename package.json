@@ -1,0 +1,28 @@
+{
+  "name": "Back-End-HearthStone-DeckManager",
+  "version": "1.0.0",
+  "dependencies": {
+    "asn1": "^0.2.4",
+    "async": "^2.6.2",
+    "base64url": "^3.0.1",
+    "combined-stream": "^1.0.7",
+    "core-util-is": "^1.0.2",
+    "delayed-stream": "^1.0.0",
+    "ecc-jsbn": "^0.2.0",
+    "express": "^4.17.0",
+    "hearthstone-card-images": "^4.12.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.2",
+    "nodemon": "^1.19.1",
+    "puppeteer": "^1.16.0",
+    "socket.io": "^2.2.0",
+    "unirest": "^0.6.0",
+    "ws": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
